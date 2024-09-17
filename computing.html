@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Makoro and Sons</title>
+    <style>
+        /* Add CSS styles here */
+        header {
+            background-color: #48989b7e;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #6adce07e;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #000;
+        }
+        nav a:hover {
+            color: #007bff;
+        }
+        section {
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #ccd9ff;
+            opacity: .9;
+        }
+        footer {
+            background-color: #7a90a5;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            opacity: 0.95;
+        }
+        .Computing {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            justify-items: center;
+            align-items: center;
+            text-align: center;
+        }
+        .Computing img {
+            width: 100%;
+            height: auto;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+            height: auto;
+        }
+        h1{
+            color: #ccd9ff;
+        }
+    </style>
+</head>
+<body background="images/background.jpg">
+    <header>
+        <a href="index.html"><img src="images/makoro-logo.png" alt="Makoro and Sons Logo" class="logo"></a>
+        <h1>Makoro and Sons</h1>
+        <h2>Shumela Phanda</h2>
+    </header>
+    
+    <nav>
+        <table>
+            <tr>
+                <td><a href="home.html">Home</a></td>
+                <td><a href="Electrical.html">Electrical</a></td>
+                <td><a href="Computing.html">Computing</a></td>
+                <td><a href="contact.html">Contact Us</a></td>
+                <td><a href="about.html">About Us</a></td>
+            </tr>
+        </table>
+    </nav>
+
+    <section id="Computing">
+        <h2>Computing</h2>
+        <p>Take a look at our Computing featuring Intel Upgrade Kits,AMD Upgrade Kits and Workstations.</p>
+        <div class="Computing">
+            <a href="contact.html">
+                <img src="images\Computing\amd upgrade kit.jpeg" alt="amd upgrade kit" style="max-width: 150px;">
+            </a>
+            <a href="contact.html">
+                <img src="images\Computing\amd.jpg" alt="amd" style="max-width: 150px;">
+            </a>
+            <a href="contact.html">
+                <img src="images\Computing\dell workstation.webp" alt="dell workstation" style="max-width: 150px;">
+            </a>
+            <a href="contact.html">
+                <img src="images\Computing\intel.jpg" alt="intel" style="max-width: 150px;">
+            </a>
+            <a href="contact.html">
+                <img src="images\Computing\intel upgrade kit.jpeg" alt="intel upgrade kit" style="max-width: 150px;">
+            </a>
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2019 Makoro and Sons. All rights reserved.</p>
+        <p>Follow us on:</p>
+        <p>
+            <a href="https://www.facebook.com/makoro.and.sons">Facebook</a> |
+            
+            <a href="https://www.twitter.com/makoroandsons">Twitter</a>
+        </p>
+    </footer>
+</body>
+</html>
