@@ -4,52 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Makoro and Sons</title>
-    <style>
-        /* Add CSS styles here */
-        header {
-            background-color: #48989b7e;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #6adce07e;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            margin-right: 20px;
-            text-decoration: none;
-            color: #000;
-        }
-        nav a:hover {
-            color: #007bff;
-        }
-        section {
-            padding: 10px;
-            margin-top: 10px;
-            background-color: #ccd9ff;
-            opacity: .9;
-        }
-        footer {
-            background-color: #7a90a5;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            opacity: 0.95;
-        }
-        .logo {
-            display: block;
-            margin: 0 auto;
-            width: 150px;
-            height: auto;
-        }
-        
-        h1{
-            color: #ccd9ff;
-        }
-    </style>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="Styles.css">
 </head>
 <body background="images/background.jpg">
     <header>
@@ -58,17 +17,21 @@
         <h2>Shumela Phanda</h2>
     </header>
     
-    <nav>
-        <table>
-            <tr>
-                <td><a href="home.html">Home</a></td>
-                <td><a href="Electrical.html">Electrical</a></td>
-                <td><a href="Computing.html">Computing</a></td>
-                <td><a href="contact.html">Contact Us</a></td>
-                <td><a href="about.html">About Us</a></td>
-            </tr>
-        </table>
-    </nav>
+    <div class="topnav" id="myTopnav">
+               
+        <tr>
+            <td><a href="home.html" class="active">Home</a></td>
+            <td><a href="Electrical.html">Electrical</a></td>
+            <td><a href="Computing.html">Computing</a></td>
+            <td><a href="contact.html">Contact Us</a></td>
+            <td><a href="about.html">About Us</a></td>
+            <td><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+              </td>
+        </tr>
+        <script src="functions.js"></script>
+</div>
 
  
 

@@ -3,51 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Makoro and Sons</title>
-    <style>
-        /* Add CSS styles here */
-        header {
-            background-color: #48989b7e;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #6adce07e;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            margin-right: 20px;
-            text-decoration: none;
-            color: #000;
-        }
-        nav a:hover {
-            color: #007bff;
-        }
-        section {
-            padding: 10px;
-            margin-top: 10px;
-            background-color: #ccd9ff;
-            opacity: .9;
-        }
-        footer {
-            background-color: #7a90a5;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            opacity: 0.95;
-        }
-        .logo {
-            display: block;
-            margin: 0 auto;
-            width: 150px;
-            height: auto;
-        }
-        h1{
-            color: #ccd9ff;
-        }
-    </style>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="Styles.css">
 </head>
 <body background="images/background.jpg">
     <header>
@@ -56,17 +16,21 @@
         <h2>Shumela Phanda</h2>
     </header>
     
-    <nav>
-        <table>
-            <tr>
-                <td><a href="home.html">Home</a></td>
-                <td><a href="Electrical.html">Electrical</a></td>
-                <td><a href="Computing.html">Computing</a></td>
-                <td><a href="contact.html">Contact Us</a></td>
-                <td><a href="about.html">About Us</a></td>
-            </tr>
-        </table>
-    </nav>
+    <div class="topnav" id="myTopnav">
+               
+        <tr>
+            <td><a href="home.html" class="active">Home</a></td>
+            <td><a href="Electrical.html">Electrical</a></td>
+            <td><a href="Computing.html">Computing</a></td>
+            <td><a href="contact.html">Contact Us</a></td>
+            <td><a href="about.html">About Us</a></td>
+            <td><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+              </td>
+        </tr>
+        <script src="functions.js"></script>
+</div>
 
    
        <section id="contact">
@@ -85,6 +49,40 @@
         
     </section>
 
+    <section>
+        <h2>Send Us a Message</h2>
+        <!-- Google Form Embed -->
+         <div class="iframe-container">
+        <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSc4lYk3Q7DzHzwqppYWgo8f_zGzJ6cEfY6m1GgIkYBdDNC-zA/viewform?usp=sf_link=true"
+            width="640"
+            height="800"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            style="text-align: center;">
+            Loading…
+        </iframe>
+    </div>
+    </section>
+
+    <section>
+        <h2>Visit Us</h2>
+        <p align="center">We welcome you to visit our Local Store and shop our wide range of electrical solar appliances and computer accessories. Below is our location:</p>
+        <p align="center"><strong>Address:</strong> 1234 Imaginary Road, Johannesburg, 2004</p>
+        <!-- Google Maps Embed -->
+        <div class="iframe-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1234567890!2d-122.41941548468215!3d37.77492957975925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c0b3b3b3b%3A0x4a3a3c3a3c3a3a3a!2s123+Bakery+Lane%2C+Sweetville%2C+CA+98765!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+    </section>
    
 
     <footer>

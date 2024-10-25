@@ -1,101 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Makoro and Sons</title>
-    
-    <style>
-        /* Add CSS styles here */
-        header {
-            background-color: #48989b7e;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #6adce07e;
-            padding: 10px;
-            text-align:center;
-        }
-        nav a {
-            margin-right: 20px;
-            text-decoration: none;
-            color: #000;
-        }
-        nav b {
-            margin-right: 20px;
-            text-decoration: none;
-            color: #000;
-        }
-        nav a:hover {
-            color: #007bff;
-        }
-        nav b:hover{
-            color: #007bff
-        }
-        section {
-            padding: 10px;
-            margin-top: 10px;
-            background-color: #ccd9ff;
-            opacity: .9;
-        }
-        footer {
-            background-color: #7a90a5;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            opacity: 0.95;
-        }
-        .carousel-container {
-            position: relative;
-            max-width: 100%;
-            overflow: hidden;
-        }
-        .carousel-item {
-            display: none;
-        }
-        .carousel-item img {
-            width: 100%;
-            height: auto;
-        }
-        .carousel-item.active {
-            display: block;
-        }
-       
-        .logo {
-            display: block;
-            margin: 0 auto;
-            width: 150px;
-            height: auto;
-        }
-        h1{
-            color: #ccd9ff;
-        }
-        
-    </style>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="Styles.css">
 </head>
+
 <body background="images/background.jpg">
     <header>
         <a href="index.html"><img src="images/makoro-logo.png" alt="Makoro and Sons Logo" class="logo"></a>
         <h1>Makoro and Sons</h1>
         <h2>Shumela Phanda</h2>
     </header>
-    
-    <nav>
-        <table>
-            <tr>
-                <td><a href="home.html">Home</a></td>
-                <td><a href="Electrical.html">Electrical</a></td>
-                <td><a href="Computing.html">Computing</a></td>
-                <td><a href="contact.html">Contact Us</a></td>
-                <td><a href="about.html">About Us</a></td>
-            </tr>
-        </table>
-    </nav>
+    <div class="topnav" id="myTopnav" >
+               
+                <tr>
+                    <td><a href="home.html" class="active">Home</a></td>
+                    <td><a href="Electrical.html">Electrical</a></td>
+                    <td><a href="Computing.html">Computing</a></td>
+                    <td><a href="contact.html">Contact Us</a></td>
+                    <td><a href="about.html">About Us</a></td>
+                    <td><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                      </td>
+                </tr>
+                <script src="functions.js"></script>
+    </div>
+    <section>
+        <h2>Product Search</h2>
+        <div class="search-container" style="text-align: center;">
+            <input type="text" id="searchInput" placeholder="Enter keyword">
+            <button onclick="search()">Search</button>
+        </div>
+        <div class="search-results" id="searchResults"></div>
+
+        <script src="functions.js"></script>
+    </section>
 
     <section>
         <h2>Featured Electrical</h2>
-        <p>At Makoro and Sons, we pride ourselves on our wide selection of Solar Energy Solutions. Here are some of our customer favorites:</p>
+        <p>At Makoro and Sons, we pride ourselves on our wide selection of Solar Energy Solutions. Here are some of our
+            customer favorites:</p>
         <ul>
             <li>12 Kw Solar Inverter</li>
             <li>Load Shedding Kits Domestic</li>
@@ -106,7 +57,8 @@
     </section>
     <section>
         <h2>Featured Computing</h2>
-        <p>At Makoro and Sons, we pride ourselves on our wide selection of Computer Solutions. Here are some of our customer favorites:</p>
+        <p>At Makoro and Sons, we pride ourselves on our wide selection of Computer Solutions. Here are some of our
+            customer favorites:</p>
         <ul>
             <li>Bare Bone Builds</li>
             <li>Computer maintenance</li>
@@ -120,13 +72,15 @@
         <p>We specialize in creating custom cakes for all occasions. Check out some of our latest designs below:</p>
         <div class="carousel-container">
             <div class="carousel-item active">
-                <img src="images\home\Load Shedding Kit.png" alt="Load Shedding Kit" style="width: 200px; height: 150px;">
+                <img src="images\home\Load Shedding Kit.png" alt="Load Shedding Kit"
+                    style="width: 200px; height: 150px;">
             </div>
             <div class="carousel-item">
                 <img src="images\home\amd upgrade kit.jpeg" alt="amd upgrade kit" style="width: 200px; height: 150px;">
             </div>
             <div class="carousel-item">
-                <img src="images\home\Load Shedding Protect.jpg" alt="Load Shedding Protect" style="width: 200px; height: 150px;">
+                <img src="images\home\Load Shedding Protect.jpg" alt="Load Shedding Protect"
+                    style="width: 200px; height: 150px;">
             </div>
             <div class="carousel-item">
                 <img src="images\home\amd.jpg" alt="amd" style="width: 200px; height: 150px;">
@@ -135,10 +89,12 @@
                 <img src="images\home\Battery Domestic.png" alt="Battery Domestic" style="width: 200px; height: 150px;">
             </div>
             <div class="carousel-item">
-                <img src="images\home\dell workstation.webp" alt="dell workstation" style="width: 200px; height: 150px;">
+                <img src="images\home\dell workstation.webp" alt="dell workstation"
+                    style="width: 200px; height: 150px;">
             </div>
             <div class="carousel-item">
-                <img src="images\home\Solar Panel Domestic.png" alt="Solar Panel Domestic" style="width: 200px; height: 150px;">
+                <img src="images\home\Solar Panel Domestic.png" alt="Solar Panel Domestic"
+                    style="width: 200px; height: 150px;">
             </div>
             <div class="carousel-item">
                 <img src="images\home\intel.jpg" alt="intel" style="width: 200px; height: 150px;">
@@ -147,7 +103,8 @@
                 <img src="images\home\Solar System 2.png" alt="Solar System 2" style="width: 200px; height: 150px;">
             </div>
             <div class="carousel-item">
-                <img src="images\home\intel upgrade kit.jpeg" alt="intel upgrade kit" style="width: 200px; height: 150px;">
+                <img src="images\home\intel upgrade kit.jpeg" alt="intel upgrade kit"
+                    style="width: 200px; height: 150px;">
             </div>
             <!-- Add more carousel items as needed -->
         </div>
@@ -155,8 +112,13 @@
 
     <section>
         <h2>Our Story</h2>
-        <p>Makoro and Sons was founded in 2019 with a passion for providing high-quality electrical goods. Our mission is to bring joy to our customers with every solution. We use only the finest brands to ensure that every product is perfect.</p>
-        <p>We believe in the power of community and strive to make a positive impact through our electrical solutions. Whether you're looking for a Industrial Load Shedding Solution, Domestic Load Shedding Solution, Computer Hardware Upgrades, Workstations, or just a Solar Panel, Makoro and Sons is here to make your day electrified.</p>
+        <p>Makoro and Sons was founded in 2019 with a passion for providing high-quality electrical goods. Our mission
+            is to bring joy to our customers with every solution. We use only the finest brands to ensure that every
+            product is perfect.</p>
+        <p>We believe in the power of community and strive to make a positive impact through our electrical solutions.
+            Whether you're looking for a Industrial Load Shedding Solution, Domestic Load Shedding Solution, Computer
+            Hardware Upgrades, Workstations, or just a Solar Panel, Makoro and Sons is here to make your day
+            electrified.</p>
     </section>
 
     <footer>
@@ -164,7 +126,7 @@
         <p>Follow us on:</p>
         <p>
             <a href="https://www.facebook.com/makoro.and.sons">Facebook</a> |
-            
+
             <a href="https://www.twitter.com/makoroandsons">Twitter</a>
         </p>
     </footer>
@@ -181,10 +143,12 @@
                 slides[i].style.display = "none";
             }
             slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}
-            slides[slideIndex-1].style.display = "block";
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
             setTimeout(carousel, 2000); // Change image every 2 seconds
         }
     </script>
+   
 </body>
+
 </html>
