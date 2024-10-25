@@ -151,6 +151,46 @@ p {
 
 }
 
+/* Styles for forms and messages */
+.user-form {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 300px;
+    display: inline-block;
+    
+}
+
+.user-form input {
+    margin: 5px 0;
+    padding: 5px;
+    width: 90%;
+    
+}
+
+.message {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+    
+}
+
+.button-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.register-container{
+    display: flex;
+    justify-content: center;
+}
+.login-container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
 
 
 

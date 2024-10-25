@@ -64,4 +64,34 @@ function search() {
     }
 }
 //********************************************************************** */
+ // Function to toggle the visibility of forms
+ function toggleForm(formId) {
+    document.getElementById('registerForm').style.display = 'none';
+    document.getElementById('loginForm').style.display = 'none';
+    document.getElementById(formId).style.display = 'block';
+}
+
+// Function to handle user registration
+function registerUser() {
+    // Get the input values
+    var username = document.getElementById('regUsername').value;
+    var password = document.getElementById('regPassword').value;
+
+    // Perform validation or registration logic here
+
+    // Display success message
+    document.getElementById('regMessage').textContent = username + "Successfully registered!";
+}
+
+// Function to handle user login
+function loginUser() {
+    // Get the input values
+    var username = document.getElementById('loginUsername').value;
+    var password = document.getElementById('loginPassword').value;
+
+    // Perform validation or login logic here
+
+    // Display success message
+    document.getElementById('loginMessage').textContent = username +  " Successfully logged in!";
+}
 
