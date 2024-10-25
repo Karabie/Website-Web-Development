@@ -189,6 +189,10 @@ p {
     justify-content: center;
     
 }
+.message-container{
+    display: flex;
+    justify-content: center;
+}
 
 
 

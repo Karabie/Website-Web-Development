@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,16 @@
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="Styles.css">
 </head>
+
 <body background="images/background.jpg">
     <header>
         <a href="index.html"><img src="images/makoro-logo.png" alt="Makoro and Sons Logo" class="logo"></a>
         <h1>Makoro and Sons</h1>
         <h2>Shumela Phanda</h2>
     </header>
-    
+
     <div class="topnav" id="myTopnav">
-               
+
         <tr>
             <td><a href="home.html" class="active">Home</a></td>
             <td><a href="Electrical.html">Electrical</a></td>
@@ -25,74 +27,81 @@
             <td><a href="contact.html">Contact Us</a></td>
             <td><a href="about.html">About Us</a></td>
             <td><a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-              </a>
-              </td>
+                    <i class="fa fa-bars"></i>
+                </a>
+            </td>
         </tr>
         <script src="functions.js"></script>
-</div>
+    </div>
 
-   
-       <section id="contact">
+
+    <section id="contact">
         <h2>Contact Us</h2>
         <p>Get in touch with us for inquiries, feedback, or to place custom orders. We'd love to hear from you!</p>
         <li>Address: 1234 Imaginary Road, Johannesburg, 2004</li>
         <li>Contact Number: 012 345 6789</li>
         <h3>
             Office Hours
-        </h3> 
-            <li>Mon: 09:00 am - 15:00 pm</li>
-            <li>Tue: 09:00 am - 17:00 pm</li>
-            <li>Wed: 09:00 am - 17:00 pm</li>
-            <li>Thu: 09:00 am - 17:00 pm</li>
-            <li>Fri: 09:00 am - 13:00 pm</li>
-        
+        </h3>
+        <li>Mon: 09:00 am - 15:00 pm</li>
+        <li>Tue: 09:00 am - 17:00 pm</li>
+        <li>Wed: 09:00 am - 17:00 pm</li>
+        <li>Thu: 09:00 am - 17:00 pm</li>
+        <li>Fri: 09:00 am - 13:00 pm</li>
+
+    </section>
+    <section>
+        <h2>Send Us a Message</h2>
+        <div class="message-container">
+            
+            <form id="contactForm" action="mailto:k.m.makoro@gmail.com" method="POST" enctype="text/plain">
+                <input type="text" id="loginUsername" placeholder="Name" required><br><br>
+                <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required><br><br>
+                <textarea type="message" id="message" name="message" rows="5" placeholer="Message" required></textarea><br><br>
+                <button type="submit">Submit</button>
+                <script src="functions.js"></script>
+            </form>
+        </div>
     </section>
 
     <section>
-        <h2>Send Us a Message</h2>
+        <h2>Send Us a Message via Google forms</h2>
         <!-- Google Form Embed -->
-         <div class="iframe-container">
-        <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSc4lYk3Q7DzHzwqppYWgo8f_zGzJ6cEfY6m1GgIkYBdDNC-zA/viewform?usp=sf_link=true"
-            width="640"
-            height="800"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
-            style="text-align: center;">
-            Loading…
-        </iframe>
-    </div>
+        <div class="iframe-container">
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSc4lYk3Q7DzHzwqppYWgo8f_zGzJ6cEfY6m1GgIkYBdDNC-zA/viewform?usp=sf_link=true"
+                width="640" height="800" frameborder="0" marginheight="0" marginwidth="0" style="text-align: center;">
+                Loading…
+            </iframe>
+        </div>
     </section>
 
     <section>
         <h2>Visit Us</h2>
-        <p align="center">We welcome you to visit our Local Store and shop our wide range of electrical solar appliances and computer accessories. Below is our location:</p>
+        <p align="center">We welcome you to visit our Local Store and shop our wide range of electrical solar appliances
+            and computer accessories. Below is our location:</p>
         <p align="center"><strong>Address:</strong> 1234 Imaginary Road, Johannesburg, 2004</p>
         <!-- Google Maps Embed -->
         <div class="iframe-container">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1234567890!2d-122.41941548468215!3d37.77492957975925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c0b3b3b3b%3A0x4a3a3c3a3c3a3a3a!2s123+Bakery+Lane%2C+Sweetville%2C+CA+98765!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus"
-            width="600"
-            height="450"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1234567890!2d-122.41941548468215!3d37.77492957975925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c0b3b3b3b%3A0x4a3a3c3a3c3a3a3a!2s123+Bakery+Lane%2C+Sweetville%2C+CA+98765!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
     </section>
-   
+
 
     <footer>
         <p>&copy; 2019 Makoro and Sons. All rights reserved.</p>
         <p>Follow us on:</p>
         <p>
             <a href="https://www.facebook.com/makoro.and.sons">Facebook</a> |
-            
+
             <a href="https://www.twitter.com/makoroandsons">Twitter</a>
         </p>
     </footer>
 </body>
+
 </html>
