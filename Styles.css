@@ -27,9 +27,6 @@
     display: none;
 }
 
-
-
-/* Add CSS styles here */
 header {
     background-color: #48989b7e;
     padding: 20px;
@@ -40,8 +37,12 @@ header {
 section {
     padding: 10px;
     margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
     background-color: #ccd9ff;
     opacity: .9;
+    border-radius: 20px;
 }
 
 footer {
@@ -139,8 +140,8 @@ p {
 }
 
 .search-results img {
-    width: 100px;
-    height: 100px;
+    width: 175px;
+    height: 175px;
     margin: 10px;
     cursor: pointer;
 }
@@ -148,7 +149,7 @@ p {
 .iframe-container {
     display: flex;
     justify-content: center;
-
+    border-radius: 20px;
 }
 
 /* Styles for forms and messages */
@@ -158,21 +159,21 @@ p {
     border: 1px solid #ddd;
     width: 300px;
     display: inline-block;
-    
+
 }
 
 .user-form input {
     margin: 5px 0;
     padding: 5px;
     width: 90%;
-    
+
 }
 
 .message {
     color: green;
     font-weight: bold;
     margin-top: 10px;
-    
+
 }
 
 .button-container {
@@ -180,24 +181,21 @@ p {
     text-align: center;
 }
 
-.register-container{
-    display: flex;
-    justify-content: center;
-}
-.login-container{
-    display: flex;
-    justify-content: center;
-    
-}
-.message-container{
+.register-container {
     display: flex;
     justify-content: center;
 }
 
+.login-container {
+    display: flex;
+    justify-content: center;
 
+}
 
-
-
+.message-container {
+    display: flex;
+    justify-content: center;
+}
 
 /* Mobile Responsiveness */
 @media screen and (max-width: 600px) {
@@ -233,7 +231,7 @@ p {
     .iframe-container {
         display: flex;
         justify-content: center;
-
+        border-radius: 20px;
     }
 
     /* Adjust header styles for smaller screens */
@@ -259,14 +257,7 @@ p {
     }
 
     /* Adjust section content for smaller screens */
-    section {
-        padding: 15px;
-        /* Reduce padding */
-        max-width: 100%;
-        /* Allow section to take full width */
-        margin: 0 5%;
-        /* Add side margins for spacing */
-    }
+
 
     /* Footer adjustments for mobile */
     footer {
@@ -278,12 +269,7 @@ p {
         opacity: 0.95;
     }
 
-    section {
-        padding: 10px;
-        margin-top: 10px;
-        background-color: #ccd9ff;
-        opacity: .9;
-    }
+
 
     header {
         padding: 10px;
@@ -304,11 +290,18 @@ p {
     /* Adjust section content for smaller screens */
     section {
         padding: 15px;
+
         /* Reduce padding */
+
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
         max-width: 100%;
         /* Allow section to take full width */
-        margin: 0 5%;
+
         /* Add side margins for spacing */
+        border-radius: 20px;
     }
 
     h2 {
